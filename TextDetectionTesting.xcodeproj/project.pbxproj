@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260FCE8724CEA82E00E9D2EA /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FCE8624CEA82E00E9D2EA /* DrawingView.swift */; };
 		26A0836124C57D7B0003712A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0836024C57D7B0003712A /* AppDelegate.swift */; };
 		26A0836324C57D7B0003712A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0836224C57D7B0003712A /* SceneDelegate.swift */; };
 		26A0836524C57D7B0003712A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0836424C57D7B0003712A /* ViewController.swift */; };
 		26A0836824C57D7B0003712A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A0836624C57D7B0003712A /* Main.storyboard */; };
 		26A0836A24C57D7E0003712A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26A0836924C57D7E0003712A /* Assets.xcassets */; };
 		26A0836D24C57D7E0003712A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26A0836B24C57D7E0003712A /* LaunchScreen.storyboard */; };
+		26A0837624C586890003712A /* Messure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0837424C586890003712A /* Messure.swift */; };
+		26A0837724C586890003712A /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A0837524C586890003712A /* VideoCapture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		260FCE8624CEA82E00E9D2EA /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		26A0835D24C57D7B0003712A /* TextDetectionTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextDetectionTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A0836024C57D7B0003712A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26A0836224C57D7B0003712A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		26A0836924C57D7E0003712A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26A0836C24C57D7E0003712A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26A0836E24C57D7E0003712A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A0837424C586890003712A /* Messure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Messure.swift; sourceTree = "<group>"; };
+		26A0837524C586890003712A /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +65,23 @@
 				26A0836024C57D7B0003712A /* AppDelegate.swift */,
 				26A0836224C57D7B0003712A /* SceneDelegate.swift */,
 				26A0836424C57D7B0003712A /* ViewController.swift */,
+				260FCE8624CEA82E00E9D2EA /* DrawingView.swift */,
 				26A0836624C57D7B0003712A /* Main.storyboard */,
+				26A0837824C5869A0003712A /* Utils */,
 				26A0836924C57D7E0003712A /* Assets.xcassets */,
 				26A0836B24C57D7E0003712A /* LaunchScreen.storyboard */,
 				26A0836E24C57D7E0003712A /* Info.plist */,
 			);
 			path = TextDetectionTesting;
+			sourceTree = "<group>";
+		};
+		26A0837824C5869A0003712A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				26A0837424C586890003712A /* Messure.swift */,
+				26A0837524C586890003712A /* VideoCapture.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260FCE8724CEA82E00E9D2EA /* DrawingView.swift in Sources */,
+				26A0837624C586890003712A /* Messure.swift in Sources */,
+				26A0837724C586890003712A /* VideoCapture.swift in Sources */,
 				26A0836524C57D7B0003712A /* ViewController.swift in Sources */,
 				26A0836124C57D7B0003712A /* AppDelegate.swift in Sources */,
 				26A0836324C57D7B0003712A /* SceneDelegate.swift in Sources */,
@@ -287,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDS3V4R7G8;
 				INFOPLIST_FILE = TextDetectionTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FDS3V4R7G8;
 				INFOPLIST_FILE = TextDetectionTesting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
