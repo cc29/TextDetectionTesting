@@ -50,6 +50,7 @@
 			children = (
 				26A0835F24C57D7B0003712A /* TextDetectionTesting */,
 				26A0835E24C57D7B0003712A /* Products */,
+				26C55B5824D2D8E700A2A40E /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,7 +65,6 @@
 		26A0835F24C57D7B0003712A /* TextDetectionTesting */ = {
 			isa = PBXGroup;
 			children = (
-				26C55B5824D2D8E700A2A40E /* README.md */,
 				26A0836024C57D7B0003712A /* AppDelegate.swift */,
 				26A0836224C57D7B0003712A /* SceneDelegate.swift */,
 				26A0836424C57D7B0003712A /* ViewController.swift */,
