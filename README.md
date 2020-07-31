@@ -35,7 +35,7 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
    
    ##### 3.1 Import Vision framework
    
-   ```
+   ```swift
    import Vision
    ```
    
@@ -48,19 +48,33 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
    ##### 3.3 Configure and prepare
    
    ```swift
+        
        override func viewDidLoad() {
            super.viewDidLoad()
            measure.delegate = self
         let request = VNDetectTextRectanglesRequest(completionHandler: self.visionDidComplete)
         }
        func visionDidComplete(request: VNRequest, error: Error?) {
-          self.measure.labeling(with: "endInference")
+           self.measure.labeling(with: "endInference")
+   
+           
+           }
    ```
    
-   ##### 3.4 Inference
+   ##### 3.4 Infernece
    
    ```swift
    
    ```
+   
+   
+   
+   
+   
+   ### 
+   
+   
+   
+   
 
-##### 
+
