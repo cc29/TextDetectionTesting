@@ -57,13 +57,13 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
    
    ##### 3.2 Define properties for vision
    
-   ```
+   ```swift
    var request: VNDetectTextRectanglesRequest?
    ```
    
    ##### 3.3 Configure and prepare
    
-   ```
+   ```swift
         
        override func viewDidLoad() {
            super.viewDidLoad()
@@ -83,7 +83,7 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
    
    ##### 3.4 Infernece
    
-   ```
+   ```swift
    
    ```
    
