@@ -3,11 +3,7 @@
 This project is Text Detection on iOS using [Vision](https://developer.apple.com/documentation/vision) built-in model.  
 If you are interested in iOS + Machine Learning, visit [here](https://github.com/motlabs/iOS-Proejcts-with-ML-Models) you can see various DEMOs.
 
-
-
 ![](/Users/theseusX12/Desktop/FirstWallpaper.png)
-
----
 
 ## Requirements
 
@@ -16,14 +12,6 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
 - iOS 12.0+
 
 - Swift 4.2
-  
-  
-  
-  
-  
-  
-
----
 
 ## Performance
 
@@ -33,10 +21,6 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
 | ------------- | -------------- |
 | iPhone XS Max | 10 ms          |
 
-
-
----
-
 ## Build & Run
 
 1. ### Prerequisites
@@ -45,7 +29,7 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
 
 2. ### Dependencies
    
-   No external library yet
+   No external library yet.
 
 3. ### Code
    
@@ -57,44 +41,26 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
    
    ##### 3.2 Define properties for vision
    
-   ```
+   ```swift
    var request: VNDetectTextRectanglesRequest?
    ```
    
    ##### 3.3 Configure and prepare
    
-   ```
-        
+   ```swift
        override func viewDidLoad() {
            super.viewDidLoad()
            measure.delegate = self
         let request = VNDetectTextRectanglesRequest(completionHandler: self.visionDidComplete)
         }
-    
-        
-       
-       
        func visionDidComplete(request: VNRequest, error: Error?) {
-           self.measure.labeling(with: "endInference")
-   
-           
-           }
+          self.measure.labeling(with: "endInference")
    ```
    
-   ##### 3.4 Infernece
+   ##### 3.4 Inference
+   
+   ```swift
    
    ```
-   
-   ```
-   
-   
-   
-   
-   
-   ### 
-   
-   
-   
-   
 
-
+##### 
