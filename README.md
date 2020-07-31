@@ -51,7 +51,7 @@ If you are interested in iOS + Machine Learning, visit [here](https://github.com
    
    ##### 3.1 Import Vision framework
    
-   ```
+   ```swift
    import Vision
    ```
    
